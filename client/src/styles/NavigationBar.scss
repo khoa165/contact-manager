@@ -1,0 +1,10 @@
+@import 'Variables';
+
+#navbar {
+  &.navbar {
+    background: $brand-primary-color;
+  }
+  .nav-link {
+    color: #fff;
+  }
+}

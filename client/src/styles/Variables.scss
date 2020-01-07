@@ -1,0 +1,13 @@
+$brand-primary-color: #16c5ff;
+$brand-primary-darker-color: #02b8f5;
+$brand-secondary-color: #94a5ff;
+$brand-tertiary-color: #ece8dc;
+$background-primary-grey: #6c757d;
+
+:export {
+  brandPrimaryColor: $brand-primary-color;
+  brandPrimaryDarkerColor: $brand-primary-darker-color;
+  brandSecondaryColor: $brand-secondary-color;
+  brandTertiaryColor: $brand-tertiary-color;
+  backgroundPrimaryGrey: $background-primary-grey;
+}
