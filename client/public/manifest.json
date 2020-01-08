@@ -3,9 +3,7 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "https://res.cloudinary.com/khoa165/image/upload/c_scale,h_50,q_100/v1578227173/portfolio/favicon.png",
-      "sizes": "50 x 50",
-      "type": "image/x-icon"
+      "src": "https://res.cloudinary.com/khoa165/image/upload/c_scale,h_50,q_100/v1578227173/portfolio/favicon.png"
     }
   ],
   "start_url": ".",
