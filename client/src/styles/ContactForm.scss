@@ -1,0 +1,12 @@
+@import 'Variables';
+
+#contactForm {
+  border: 1px solid $brand-primary-color;
+  border-radius: 10px;
+  padding: 30px 0;
+
+  .submitFormButton:hover {
+    background: $brand-primary-color;
+    border-color: $brand-primary-color;
+  }
+}

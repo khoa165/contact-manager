@@ -26,6 +26,21 @@ const NavigationBar = ({ icon, title }) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className='ml-auto' navbar>
             <NavItem>
+              <Link to='/home' className='nav-link'>
+                Home
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link to='/register' className='nav-link'>
+                Register
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link to='/login' className='nav-link'>
+                Login
+              </Link>
+            </NavItem>
+            <NavItem>
               <a
                 href='https://www.khoa165.com/#contact'
                 className='nav-link'

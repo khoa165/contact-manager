@@ -4,20 +4,35 @@ import { Container } from 'reactstrap';
 import NavigationBar from './components/layout/NavigationBar';
 import Home from './components/pages/Home';
 import NotFound from './components/pages/NotFound';
+import Register from './components/auth/Register';
+import Login from './components/auth/Login';
+import Alerts from './components/layout/Alerts';
+import ContactState from './context/contact/ContactState';
+import AuthState from './context/auth/AuthState';
+import AlertState from './context/alert/AlertState';
 
 const App = () => {
   return (
-    <Router>
-      <Fragment>
-        <NavigationBar />
-        <Container className=''>
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route component={NotFound} />
-          </Switch>
-        </Container>
-      </Fragment>
-    </Router>
+    <AuthState>
+      <ContactState>
+        <AlertState>
+          <Router>
+            <Fragment>
+              <NavigationBar />
+              <Container className='my-4'>
+                <Alerts />
+                <Switch>
+                  <Route exact path='/' component={Home} />
+                  <Route exact path='/register' component={Register} />
+                  <Route exact path='/login' component={Login} />
+                  <Route component={NotFound} />
+                </Switch>
+              </Container>
+            </Fragment>
+          </Router>
+        </AlertState>
+      </ContactState>
+    </AuthState>
   );
 };
 

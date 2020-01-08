@@ -1,0 +1,48 @@
+@import 'Variables';
+
+#contacts {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .jumbotron {
+    padding: 15px 28px;
+  }
+  .badge {
+    font-size: 16px;
+    padding: 7px 10px;
+  }
+  .badge-primary {
+    background: $custom-blue;
+  }
+  .badge-success {
+    background: $custom-green;
+  }
+  .btn {
+    margin-top: 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+    &:first-child {
+      width: 60px;
+    }
+    &:last-child {
+      width: 80px;
+    }
+  }
+  // Animation
+  .item-enter {
+    opacity: 0;
+  }
+  .item-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms ease-in;
+  }
+  .item-exit {
+    opacity: 1;
+  }
+  .item-exit-active {
+    opacity: 0;
+    transition: opacity 1000ms ease-in;
+  }
+}
